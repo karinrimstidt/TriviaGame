@@ -1,0 +1,96 @@
+<!-- I am going to start by creating the html document -->
+<!-- ! + tab -->
+<!-- Link the style sheet -->
+<!-- Link the javascript -->
+<!-- Grab bootstrap CDN -->
+
+<!-- You'll create a trivia game that shows only one question until the player answers it or their time runs out.
+
+If the player selects the correct answer, show a screen congratulating them for choosing the right option. After a few seconds, display the next question; do this without user input.
+
+The scenario is similar for wrong answers and time-outs.
+
+If the player runs out of time, tell the player that time's up and display the correct answer. Wait a few seconds, then show the next question.
+If the player chooses the wrong answer, tell the player they selected the wrong option and then display the correct answer. Wait a few seconds, then show the next question.
+On the final screen, show the number of correct answers, incorrect answers, and an option to restart the game (without reloading the page) -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia Game HTML</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+   <!--  Jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        Totally Trivial Trivia
+    </div>
+    <!-- Container and container-fluid are two different classes that give different paddings to what they wrap -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12" id="timer" >Time remaining: </div>
+        </div>
+         <div class="row">
+            <div class="col-sm-12" id="randomQuestion">Question: </div>
+
+
+       <div class="radio">
+  <label><input type="radio" name="optradio" id="answers">Option 1</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="optradio" id="answers">Option 2</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="optradio" id="answers">Option 3</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="optradio" id="answers">Option 4</label>
+</div>
+
+
+        <div class="row">
+            <div class="col-sm-3">Correct answers: <span id="correct"></span></div>
+            <div class="col-sm-3">Incorrect answers: <span id="incorrect"></span></div>
+              <div class="col-sm-3">Unaswered questions: <span id="unanswered"></span></div>
+            
+        </div>
+
+ 
+
+     <!--    <div class="row">
+            <div class="col-sm-3">
+                <button class="btn btn-default crystal" id="ruby">Ruby</button>
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-default crystal" id="sapphire">Sapphire</button>
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-default crystal" id="emerald">Emerald</button>
+            </div>
+            <div class="col-sm-3">
+                <button class="btn btn-default crystal" id="diamond">Diamond</button>
+            </div>
+        </div> -->
+
+
+    </div>
+</body>
+<!-- Custom JS -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</html>
